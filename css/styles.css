@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  color: #333;
+  font-family: "Noto Sans JP";
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 94px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-weight: bold;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+header #header_logo {
+  font-size: 24px;
+}
+header #header_logo img {
+  vertical-align: middle;
+}
+header #header_logo a {
+  vertical-align: middle;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li:nth-child(2n) {
+  margin: 0 20px;
+}
+
+.contact_button {
+  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 155px;
+  height: 37px;
+}
+
+#fv {
+  background-image: url("/site_copy4/img/oblong.png");
+}

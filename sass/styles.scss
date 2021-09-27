@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+$button-color: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%);
+$box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+
+body {
+    margin: 0;
+    color: #333;
+    font-family: "Noto Sans JP";
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 94px;
+    box-shadow: $box-shadow;
+    font-weight: bold;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    
+    #header_logo {
+        font-size: 24px;
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        a {
+            vertical-align: middle;
+        }
+    }
+    
+    ul {
+        display: flex;
+    
+        li {
+            list-style: none;
+            
+            &:nth-child(2n){
+                margin: 0 20px;
+            }
+            
+        }
+    }
+}
+
+.contact_button {
+        background: $button-color;
+        box-shadow: $box-shadow;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        width: 155px;
+        height: 37px;
+}
+
+#fv {
+    background-image: url("/site_copy4/img/oblong.png");
+}
