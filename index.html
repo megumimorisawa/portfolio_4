@@ -12,79 +12,122 @@
     </head>
     <body>
         <header>
-            <div id="header_logo">
-                <img src="img/logo.png" alt="ロゴ画像">
-                <a>ユアコーディング</a>
+            <div id="header_inner">
+                <div id="header_logo">
+                    <img src="img/logo.png" alt="ロゴ画像">
+                    <a>ユアコーディング</a>
+                </div>
+                <ul>
+                    <li><a href="#">特徴</a></li>
+                    <li><a href="#">価格</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+                <button class="contact_button">お問い合わせ</button>
             </div>
-            <ul>
-                <li><a href="#">特徴</a></li>
-                <li><a href="#">価格</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-            <button class="contact_button">お問い合わせ</button>
         </header>
         
         <section id="fv">
-            <!--<img src="img/oblong.svg" alt="楕円形の背景画像">-->
-            <h1>コーディングの手間を 最小に、デザインに注力 する助けに</h1>
-            <p>ユアコーディングはコーディングに 特化したフリーランス デザインに注力されたい方の 助けになります</p>
-            <button class="contact_button">お問い合わせ</button>
-            <img src="img/manager.png" alt="トップ画像">
+            <div id="fv_inner">
+                <div id="fv_txt">
+                    <h1>コーディングの手間を<br/>最小に、デザインに注力<br/>する助けに</h1>
+                    <p>ユアコーディングはコーディングに<br/>特化したフリーランス<br/>デザインに注力されたい方の<br/>助けになります</p>
+                    <button class="contact_button">お問い合わせ</button>
+                </div>
+                <img src="img/manager.png" alt="トップ画像">
+            </div>
         </section>
         
-        <h1>ユアコーディング3つの特徴</h1>
-        <p>FEATURES</p>
+        <section id="feature">
+            <div id="feature_inner">
+                <h1 id="feature_inner_ttl">ユアコーディング3つの特徴</h1>
+                <p id="feature_inner_ttl_sub">FEATURES</p>
+                
+                <div class="feature_container">
+                    <div class="feature_container_box">
+                        <h2 class="feature_container_box_ttl">高速コーディング</h2>
+                        <div class="feature_container_box_inner_a">
+                            <img src="img/cto.png" alt="高速コーディングの画像">
+                            <div class="feature_container_box_inner_a_content">
+                                <h3>コーディングに特化したフリーランスのため、<br/>スピード感を持った開発が可能。</h3>
+                                <p>開発は常にスピードとの勝負です。<br/>ユアコーディングはコーディングに特化しているため、<br/>素早く納品することで、クライアントがデザインに注力<br/>する助けとなります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature_container_box">
+                        <h2 class="feature_container_box_ttl">高品質</h2>
+                        <div class="feature_container_box_inner_b">
+                            <img src="img/building_website.png" alt="高品質の画像">
+                            <div class="feature_container_box_inner_b_content">
+                                <h3>正しいマークアップで、<br/>内部SEOに強いコーディングを<br/>デフォルトで行います。</h3>
+                                <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」<br/>「保守しやすい」「拡張しやすい」と言った設計をもとに<br/>きちんとコーディングを行うため、納品後も安心です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature_container_box">
+                        <h2 class="feature_container_box_ttl">迅速なレスポンス</h2>
+                            <div class="feature_container_box_inner_a">
+                            <img src="img/new_message.png" alr="迅速なレスポンスの画像">
+                            <div class="feature_container_box_inner_a_content">
+                                <h3>原則いただいたメッセージは、<br/>業務時間内であれば6時間以内に<br/>お返しいたします。</h3>
+                                <p>連絡を返さないフリーランスが多い中、<br/>ユアコーディングでは定期的な進捗報告など、<br/>社会人としての基本を踏まえて仕事を行なって<br/>おります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <h2>高速コーディング</h2>
-        <img src="img/cto.png" alt="高速コーディングの画像">
-        <h3>コーディングに特化したフリーランスのため、 スピード感を持った開発が可能。</h3>
-        <p>開発は常にスピードとの勝負です。 ユアコーディングはコーディングに特化しているため、 素早く納品することで、クライアントがデザインに注力 する助けとなります。</p>
+        <section id="price">
+            <div id="price_inner">
+                <h1 id="price_inner_ttl">価格</h1>
+                <p id="price_inner_ttl_sub">PRICE</p>
+                <div id="price_inner_table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="table_ttl">HTMLコーディングトップページ</td>
+                                <td class="table_price">30.000円〜</td>
+                            </tr>
+                            <tr>
+                                <td class="table_ttl">HTMLコーディング下層1ページ</td>
+                                <td class="table_price">10.000円〜</td>
+                            </tr>
+                            <tr>
+                                <td class="table_ttl">HTML+WordPressトップページ</td>
+                                <td class="table_price">55.000円〜</td>
+                            </tr>
+                            <tr>
+                                <td class="table_ttl">HTML+WordPress下層1ページ</td>
+                                <td class="table_price">15.000円〜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
         
-        <h2>高品質</h2>
-        <img src="img/building_website.png" alt="高品質の画像">
-        <h3>正しいマークアップで、 内部SEOに強いコーディングを デフォルトで行います。</h3>
-        <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」 「保守しやすい」「拡張しやすい」と言った設計をもとに きちんとコーディングを行うため、納品後も安心です。</p>
-        
-        <h2>迅速なレスポンス</h2>
-        <img src="img/new_message.png" alr="迅速なレスポンスの画像">
-        <h3>原則いただいたメッセージは、 業務時間内であれば6時間以内に お返しいたします。</h3>
-        <p>連絡を返さないフリーランスが多い中、 ユアコーディングでは定期的な進捗報告など、 社会人としての基本を踏まえて仕事を行なって おります。</p>
-        
-        <h1>価格</h1>
-        <p>PRICE</p>
-        <tbody>
-            <tr>
-                <td>HTMLコーディングトップページ</td>
-                <td>30.000円〜</td>
-            </tr>
-            <tr>
-                <td>HTMLコーディング下層1ページ</td>
-                <td>10.000円〜</td>
-            </tr>
-            <tr>
-                <td>HTML+WordPressトップページ</td>
-                <td>55.000円〜</td>
-            </tr>
-            <tr>
-                <td>HTML+WordPress下層1ページ</td>
-                <td>15.000円〜</td>
-            </tr>
-        </tbody>
-        
-        <h1>よくある質問</h1>
-        <p>QUESTION</p>
-        <dl>
-            <dt>デザインから一貫してお願いすることは可能でしょうか</dt>
-            <dd> ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dd>
-        </dl>
-        <dl>
-            <dt>WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
-            <dd>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dd>
-        </dl>
-        <dl>
-            <dt>コーディングのスピード感が知りたい</dt>
-            <dd>HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</dd>
-        </dl>
+        <section id="faq">
+            <div id="faq_inner">
+                <h1 id="faq_inner_ttl">よくある質問</h1>
+                <p id="faq_inner_ttl_sub">QUESTION</p>
+                <div id="faq_list">
+                    <dl>
+                        <dt>デザインから一貫してお願いすることは可能でしょうか</dt>
+                        <dd> ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dd>
+                    </dl>
+                    <dl>
+                        <dt>WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
+                        <dd>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dd>
+                    </dl>
+                    <dl>
+                        <dt>コーディングのスピード感が知りたい</dt>
+                        <dd>HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
         
         <h1>ブログ</h1>
         <p>BLOG</p>
