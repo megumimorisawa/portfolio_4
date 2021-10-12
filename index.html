@@ -105,6 +105,7 @@
                         </tbody>
                     </table>
                 </div>
+                <p id="price_disclaimer">※詳細な価格はページや仕様によって異なります</p>
             </div>
         </section>
         
@@ -115,70 +116,154 @@
                 <div id="faq_list">
                     <dl>
                         <dt>デザインから一貫してお願いすることは可能でしょうか</dt>
-                        <dd> ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dd>
+                        <dd><p id="faq_list_answer">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</p></dd>
                     </dl>
                     <dl>
                         <dt>WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
-                        <dd>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dd>
+                        <dd><p id="faq_list_answer">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</p></dd>
                     </dl>
                     <dl>
                         <dt>コーディングのスピード感が知りたい</dt>
-                        <dd>HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</dd>
+                        <dd><p id="faq_list_answer">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</p></dd>
                     </dl>
                 </div>
             </div>
         </section>
         
-        <h1>ブログ</h1>
-        <p>BLOG</p>
-        <img src="img/blog1.png" alt="ブログ1の画像">
-        <p>サイトをリニューアルオープンしました。</p>
-        <date datetime="2020-01-23">2020.01.23</date>
-        
-        <img src="img/blog2.png" akt="ブログ2の画像">
-        <p> WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
-        <date datetime="2020-01-24">2020.01.24</date>
+        <section id="blog">
+            <div id="blog_inner">
+                <h1 id="blog_ttl">ブログ</h1>
+                <p id="blog_ttl_sub">BLOG</p>
+                
+                <div id="blog_content">
+                    <div class="blog_content_box">
+                        <img class="blog_content_box_img" src="img/blog1.png" alt="ブログ1の画像">
+                        <div class="blog_content_box_txt">
+                            <p>サイトをリニューアルオープンしました。</p>
+                            <date datetime="2020-01-23">2020.01.23</date>
+                        </div>
+                    </div>
+                    
+                    <div class="blog_content_box">
+                        <img class="blog_content_box_img" src="img/blog2.png" akt="ブログ2の画像">
+                        <div class="blog_content_box_txt">
+                            <p> WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
+                            <date datetime="2020-01-24">2020.01.24</date>
+                        </div>
+                    </div>
+                
+                    <div class="blog_content_box">
+                        <img class="blog_content_box_img" src="img/blog3.png" akt="ブログ3の画像">
+                        <div class="blog_content_box_txt">
+                            <p>ユアコーディングではデザイナーの方を広く募集しています。</p>
+                            <date datetime="2020-01-25">2020.01.25</date>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-        <img src="img/blog3.png" akt="ブログ3の画像">
-        <p>ユアコーディングではデザイナーの方を広く募集しています。</p>
-        <date datetime="2020-01-25">2020.01.25</date>
-    
-        <h1>制作実績</h1>
-        <p>WORKS</p>
-        <img src="img/works1.png" alt="制作物1の画像">
-        <p>株式会社サンプル採用サイトのコーディングを行いました！</p>
-        <p>採用技術：jQuery,Bootstrap4</p>
-        <p>実装期間：2週間</p>
-        <p>担当コーダー：石井</p>
+        <section id="works">
+            <div id="works_inner">
+                <h1 id="works_ttl">制作実績</h1>
+                <p id="works_ttl_sub">WORKS</p>
+                <div id="works_container">
+                    <div class="works_container_box">
+                        <img class="works_container_box_img" src="img/works1.png" alt="制作物1の画像">
+                        <div class="works_container_box_content">
+                            <p>株式会社サンプル採用サイトのコーディングを行いました！</p>
+                            <div class="works_container_box_content_info">
+                                <p>採用技術：jQuery,Bootstrap4</p>
+                                <p>実装期間：2週間</p>
+                                <p>担当コーダー：石井</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="works_container_box">
+                        <img class="works_container_box_img" src="img/works2.png" alt="制作物2の画像">
+                        <div class="works_container_box_content">
+                            <p> コーディングカンファレンスのイベントLPの制作を行いました！</p>
+                            <div class="works_container_box_content_info">
+                                <p>採用技術：jQuery,WordPress</p>
+                                <p>実装期間：4週間</p>
+                                <p>担当コーダー：石井</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="works_container_box">
+                        <img class="works_container_box_img" src="img/works3.png" alt="制作物3の画像">
+                        <div class="works_container_box_content">
+                            <p>株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                            <div class="works_container_box_content_info">
+                                <p>採用技術：jQuery,Bootstrap4</p>
+                                <p>実装期間：2週間</p>
+                                <p>担当コーダー：石井</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="works_container_box">
+                        <img class="works_container_box_img" src="img/works4.png" alt="制作物4の画像">
+                        <div class="works_container_box_content">
+                            <p>株式会社サンプル様通販サイトのコーディングを行いました！</p>
+                            <div class="works_container_box_content_info">
+                                <p>採用技術：jQuery,Bootstrap4</p>
+                                <p>実装期間：6週間</p>
+                                <p>担当コーダー：石井</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="works_container_box">
+                        <img class="works_container_box_img" src="img/works5.png" alt="制作物5の画像">
+                        <div class="works_container_box_content">
+                            <p>株式会社サンプル採用サイトのコーディングを行いました！</p>
+                            <div class="works_container_box_content_info">
+                                <p>採用技術：jQuery,Bootstrap4</p>
+                                <p>実装期間：2週間</p>
+                                <p>担当コーダー：石井</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <img src="img/works2.png" alt="制作物2の画像">
-        <p> コーディングカンファレンスのイベントLPの制作を行いました！</p>
-        <p>採用技術：jQuery,WordPress</p>
-        <p>実装期間：4週間</p>
-        <p>担当コーダー：石井</p>
-        
-        <img src="img/works3.png" alt="制作物3の画像">
-        <p>株式会社サンプル様採用サイトのコーディングを行いました！</p>
-        <p>採用技術：jQuery,Bootstrap4</p>
-        <p>実装期間：2週間</p>
-        <p>担当コーダー：石井</p>
-        
-        <img src="img/works4.png" alt="制作物4の画像">
-        <p>株式会社サンプル様通販サイトのコーディングを行いました！</p>
-        <p>採用技術：jQuery,Bootstrap4</p>
-        <p>実装期間：6週間</p>
-        <p>担当コーダー：石井</p>
-        
-        <img src="img/works5.png" alt="制作物5の画像">
-        <p>株式会社サンプル採用サイトのコーディングを行いました！</p>
-        <p>採用技術：jQuery,Bootstrap4</p>
-        <p>実装期間：2週間</p>
-        <p>担当コーダー：石井</p>
-        
-        <h1>お問い合わせ</h1>
-        <p>CONTACT</p>
-        <h2>コーディングの人出が足りないとき、あなたの力になります</h2>
-        <button class="contact_button">お問い合わせ</button>
-        <small>©ユアコーディング, All Rights Reserved.</small>
+        <section id="contact">
+            <div id="contact_inner">
+                <h1 id="contact_ttl">お問い合わせ</h1>
+                <p id="contact_ttl_sub">CONTACT</p>
+                <h2 id="contact_ttl_txt">コーディングの人出が足りないとき、<br/>あなたの力になります</h2>
+                <form id="contact_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBpmJgTAnr7o_wk0IY7CMYnQVpdfSCCH9BVdiObUP--2RLWQ/formResponse">
+                    <ul>
+                        <li>
+                            <label for="">お名前<span>必須</span></label><br/>
+                            <input type="text" id="your_name" name="entry.1799876415" placeholder="お名前">
+                        </li>
+                        
+                        <li>
+                            <label for="">メールアドレス<span>必須</span></label><br/>
+                            <input type="email" id="your_email" name="entry.1104062363" placeholder="メールアドレス">
+                        </li>
+                        
+                        <li>
+                            <label for="">お問い合わせ内容<span>必須</span></label><br/>
+                            <input type="textarea" id="your_question" cols="30" rows="10" name="entry.1171218904" placeholder="お問い合わせ内容">
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="confirmation">
+                            <label for="confirmation">プライバシーポリシーに同意する</label>
+                        </li>
+                    </ul>
+                    
+                    <input class="contact_button" type="submit" value="お問い合わせ">
+                </form>
+                <small>©ユアコーディング, All Rights Reserved.</small>
+            </div>
+        </section>
     </body>
 </html>
+
