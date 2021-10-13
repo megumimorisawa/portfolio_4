@@ -2,6 +2,8 @@
 
 $button-color: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%);
 $box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+$pc: 1024px;
+$sp: 599px;
 
 
 body {
@@ -33,6 +35,7 @@ header {
         justify-content: space-between;
         height: 100%;
         align-items: center;
+        padding: 0 20px;
     }
     
     #header_logo {
@@ -88,8 +91,17 @@ header {
         font-weight: 700;
         line-height: 1.5;
         
+        @media(max-width: ($pc)) {
+            display: block;
+        }
+        
         #fv_txt {
             text-align: left;
+            padding-left: 20px;
+            
+            @media(max-width: ($pc)) {
+                text-align: center;
+            }
             
             h1 {
                 font-size: 32px;
@@ -100,6 +112,10 @@ header {
                 font-size: 16px;
                 margin-bottom: 39px;
             }
+        }
+        
+        img {
+            width: 100%;
         }
     }
 }
@@ -136,10 +152,22 @@ header {
                     display: flex;
                     justify-content: space-between;
                     
+                    img {
+                        width: 100%;
+                    }
+                    
+                    @media(max-width: ($pc)) {
+                        display: block;
+                    }
+                    
                     &_content {
                         text-align: left;
                         font-weight: 700;
                         line-height: 2;
+                        
+                        @media(max-width: ($pc)) {
+                            text-align: center;
+                        }
                         
                         h3 {
                             font-size: 24px;
@@ -190,6 +218,11 @@ header {
             line-height: 1.75;
             margin: 73px 0 36px;
             
+            @media(max-width: ($pc)) {
+                width: 90%;
+                margin: 73px auto 36px;
+            }
+            
             table {
                 border-collapse: collapse;
                 width: 100%;
@@ -233,7 +266,7 @@ header {
     &_list {
         font-size: 13px;
         font-weight: 700;
-        padding: 70px 0 100px;
+        padding: 70px 20px 100px;
         
         dl {
             border: 1px solid rgba(0,0,0,0.16);
@@ -287,12 +320,22 @@ header {
         justify-content: center;
         margin-top: 70px;
         
+        @media(max-width: ($pc)) {
+            display: block;
+        }
+        
         .blog_content_box {
             margin: 0 20px;
             width: calc(100% / 3);
             width: -webkit-calk(100% / 3);
             max-width: 600px;
             box-shadow: $box-shadow;
+            
+            @media(max-width: ($pc)) {
+                width: 100%;
+                margin: 30px auto;
+                max-width: unset;
+            }
             
             &_img {
                 width: 100%;
@@ -322,7 +365,7 @@ header {
 
 #works {
     &_inner {
-        
+        padding-bottom: 110px;
     }
     
     &_ttl {
@@ -369,6 +412,7 @@ header {
 
 #contact {
     background-image: linear-gradient(90deg, #05A5FA, #67FFD6);
+    padding: 70px 0;
     
     &_inner {
         max-width: 1025px;
@@ -376,7 +420,7 @@ header {
         
         #contact_ttl {
             font-size: 32px;
-            margin: 70px 0 5px;
+            margin: 0 0 5px;
             color: #fff;
             
             &_sub {
@@ -387,18 +431,99 @@ header {
             
             &_txt {
                 color: #fff;
+                font-size: 16px;
+                margin: 44px 0;
             }
         }
     }
     
     &_form {
         background: #fff;
+        padding: 34px 62px 35px 63px;
+        font-weight: 700;
+        margin: 0 20px;
         
         ul {
+            padding: 0;
+            text-align: left;
             
             li {
                 list-style: none;
+                
+                label {
+                    span {
+                        width: 60px;
+                        height: 30px;
+                        background: #0c449b;
+                        color: #fff;
+                        margin-left: 20px;
+                        padding: 5px 16px;
+                        border-radius: 10px;
+                    }
+                }
+                
+                input {
+                    height: 43px;
+                    margin: 21px 0 39px;
+                    background: #eefbfb;
+                    border: none;
+                    padding: 8px;
+                    line-height: 1.5;
+                    
+                    &[type="name"],
+                    &[type="email"] {
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    
+                    &[type="textarea"] {
+                        width: 100%;
+                        height: 179px;
+                        
+                        &::placeholder {
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            
+            #form_checkbox {
+                text-align: center;
+                
+                #confirmation {
+                    margin: 0;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
             }
         }
+    }
+}
+
+footer {
+    background: #fff;
+    padding: 43px;
+    
+    #footer_ttl {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #footer_nav {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        margin-top: 21px;
+        
+        li {
+            list-style: none;
+        }
+    }
+    
+    small {
+        padding: 50px 0;
+        display: block;
     }
 }
