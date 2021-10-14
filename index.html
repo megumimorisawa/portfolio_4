@@ -17,11 +17,17 @@
                     <img src="img/logo.png" alt="ロゴ画像">
                     <a>ユアコーディング</a>
                 </div>
-                <ul>
-                    <li><a href="#">特徴</a></li>
-                    <li><a href="#">価格</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
+                <div id="hamburger_menu">
+                    <input type="checkbox" id="menu_btn_check">
+                    <label for="menu_btn_check" id="menu_btn"><span></span></label>
+                    <div id="header_menu">
+                        <ul>
+                            <li><a href="#">特徴</a></li>
+                            <li><a href="#">価格</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <button class="contact_button">お問い合わせ</button>
             </div>
         </header>
@@ -33,7 +39,7 @@
                     <p>ユアコーディングはコーディングに<br/>特化したフリーランス<br/>デザインに注力されたい方の<br/>助けになります</p>
                     <button class="contact_button">お問い合わせ</button>
                 </div>
-                <img src="img/manager.png" alt="トップ画像">
+                <img src="img/manager.png" alt="トップ画像" id="fv_img">
             </div>
         </section>
         
@@ -272,6 +278,10 @@
             </nav>
             <small>&copy;ユアコーディング, All Rights Reserved.</small>
         </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--<script src="js/jquery-3.6.0.min.js"></script>-->
+        <script src="js/main.js"></script>
     </body>
 </html>
 
