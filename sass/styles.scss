@@ -493,6 +493,9 @@ header {
         font-size: 13px;
         font-weight: 700;
         padding: 70px 20px 100px;
+        opacity: $fadein-opacity;
+        transform: $fadein-transform;
+        transition: $fadein-transition;
         
         @media(max-width: ($sp)) {
             padding: 70px 10px 100px;

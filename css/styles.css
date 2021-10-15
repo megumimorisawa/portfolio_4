@@ -422,6 +422,9 @@ header #header_menu ul li:nth-child(2n) {
   font-size: 13px;
   font-weight: 700;
   padding: 70px 20px 100px;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 @media (max-width: 599px) {
   #faq_list {
