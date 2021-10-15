@@ -440,16 +440,19 @@ header #header_menu ul li:nth-child(2n) {
   border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding: 25px 30px;
 }
+#faq_list_answer1, #faq_list_answer2, #faq_list_answer3 {
+  margin: 0;
+  padding: 25px 30px;
+  text-align: left;
+}
+#faq_list_answer2, #faq_list_answer3 {
+  display: none;
+}
 #faq_list dd {
   background: #f2f2f2;
   margin: 0;
   border-left: 1px solid rgba(0, 0, 0, 0.16);
   border-top: 1px solid rgba(0, 0, 0, 0.16);
-}
-#faq_list_answer {
-  margin: 0;
-  padding: 25px 30px;
-  text-align: left;
 }
 #faq .scrollin {
   opacity: 1;

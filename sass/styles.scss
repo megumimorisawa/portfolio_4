@@ -512,6 +512,20 @@ header {
             padding: 25px 30px;
         }
         
+        &_answer1,
+        &_answer2,
+        &_answer3 {
+            margin: 0;
+            padding: 25px 30px;
+            text-align: left;
+            
+        }
+        
+        &_answer2,
+        &_answer3 {
+            display: none;
+        }
+        
         dd {
             background: #f2f2f2;
             margin: 0;
@@ -520,11 +534,6 @@ header {
             
         }
         
-        &_answer {
-            margin: 0;
-            padding: 25px 30px;
-            text-align: left;
-        }
         
     }
     

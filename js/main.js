@@ -28,3 +28,21 @@ $(function () {
         });
     });
 });
+
+$(function () {
+    $('#faq_list_question1').click(function(){
+        $('#faq_list_answer1').slideToggle(200);
+    })
+})
+
+$(function () {
+    $('#faq_list_question2').click(function(){
+        $('#faq_list_answer2').slideToggle(200);
+    })
+})
+
+$(function () {
+    $('#faq_list_question3').click(function(){
+        $('#faq_list_answer3').slideToggle(200);
+    })
+})
