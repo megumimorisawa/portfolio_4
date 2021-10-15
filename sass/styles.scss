@@ -510,6 +510,7 @@ header {
         dt {
             border-top: 1px solid rgba(0,0,0,0.16);
             padding: 25px 30px;
+            cursor: pointer;
         }
         
         &_answer1,
@@ -590,6 +591,7 @@ header {
             
             &_img {
                 width: 100%;
+                // opacity: $fadein-opacity;
             }
             
             &_txt {

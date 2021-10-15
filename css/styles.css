@@ -439,6 +439,7 @@ header #header_menu ul li:nth-child(2n) {
 #faq_list dt {
   border-top: 1px solid rgba(0, 0, 0, 0.16);
   padding: 25px 30px;
+  cursor: pointer;
 }
 #faq_list_answer1, #faq_list_answer2, #faq_list_answer3 {
   margin: 0;
