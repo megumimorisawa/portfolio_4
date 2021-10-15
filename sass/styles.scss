@@ -4,6 +4,9 @@ $button-color: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%);
 $box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
 $pc: 1024px;
 $sp: 599px;
+$fadein-opacity: 0;
+$fadein-transform: translate(0, 100px);
+$fadein-transition: all 500ms;
 
 
 body {
@@ -268,25 +271,12 @@ header {
         }
         
         #fv_img {
-            opacity: 0;
-            position: relative;
-            width: 0px;
+            width: 50%;
             
-            // display: none;
-            // @media(max-width: ($pc)) {
-            //     width: 50%;
-            // }
-        img {
-            // width: 0;
-            
-            @media(max-width: ($pc)) {
-                // width: 0;
+            img {
+                width: 100%;
             }
-            
-            
         }
-        }
-        
     }
 }
 
@@ -300,13 +290,22 @@ header {
         &_ttl {
             font-size: 32px;
             margin-bottom: 5px;
-        
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
+            
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
+                opacity: $fadein-opacity;
+                transform: $fadein-transform;
+                transition: $fadein-transition;
             }
         }
+        
+        
+            
         
         .feature_container {
             
@@ -315,6 +314,9 @@ header {
                 
                 &_ttl {
                     margin: 67px 0 54px;
+                    opacity: $fadein-opacity;
+                    transform: $fadein-transform;
+                    transition: $fadein-transition;
                 }
                 
                 &_inner_a,
@@ -322,12 +324,21 @@ header {
                     display: flex;
                     justify-content: space-between;
                     
-                    img {
-                        width: 100%;
+                    
+                    &_img {
+                        width: 50%;
+                        opacity: $fadein-opacity;
+                        transform: $fadein-transform;
+                        transition: $fadein-transition;
                         
-                        @media(max-width: ($pc)) {
-                            width: 50%;
+                        img {
+                            width: 100%;
+                            
+                            @media(max-width: ($pc)) {
+                                width: 50%;
+                            }
                         }
+                        
                     }
                     
                     @media(max-width: ($pc)) {
@@ -338,6 +349,10 @@ header {
                         text-align: left;
                         font-weight: 700;
                         line-height: 2;
+                        opacity: $fadein-opacity;
+                        transform: $fadein-transform;
+                        transition: $fadein-transition;
+                        
                         
                         @media(max-width: ($pc)) {
                             text-align: center;
@@ -350,6 +365,7 @@ header {
                         
                         h3 {
                             font-size: 24px;
+                            
                         }
                         
                         p {
@@ -364,7 +380,11 @@ header {
                 
             }
         }
-        
+    }
+    
+    .scrollin{
+          opacity: 1;
+          transform: translate(0, 0);
     }
 }
 
@@ -379,11 +399,17 @@ header {
         &_ttl {
             font-size: 32px;
             margin-bottom: 5px;
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
             
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
+                opacity: $fadein-opacity;
+                transform: $fadein-transform;
+                transition: $fadein-transition;
             }
         }
         
@@ -396,6 +422,9 @@ header {
             background: #fff;
             line-height: 1.75;
             margin: 73px 0 36px;
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
             
             @media(max-width: ($pc)) {
                 width: 90%;
@@ -420,9 +449,21 @@ header {
                     padding-left: 41px;
                 }
             }
-            
         }
     }
+    
+    &_disclaimer {
+        opacity: $fadein-opacity;
+        transform: $fadein-transform;
+        transition: $fadein-transition;
+        }
+    
+    .scrollin{
+          opacity: 1;
+          transform: translate(0, 0);
+    }
+    
+    
 }
 
 #faq {
@@ -433,11 +474,17 @@ header {
         &_ttl {
             font-size: 32px;
             margin: 100px 0 5px;
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
             
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
+                opacity: $fadein-opacity;
+                transform: $fadein-transform;
+                transition: $fadein-transition;
             }
         }
     }
@@ -476,6 +523,11 @@ header {
             text-align: left;
         }
         
+    }
+    
+    .scrollin{
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
@@ -727,3 +779,4 @@ footer {
         display: block;
     }
 }
+
