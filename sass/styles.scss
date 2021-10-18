@@ -624,11 +624,17 @@ header {
     &_ttl {
         font-size: 32px;
         margin: 70px 0 5px;
+        opacity: $fadein-opacity;
+        transform: $fadein-transform;
+        transition: $fadein-transition;
         
         &_sub {
             color: #3BA6C9;
             font-size: 16px;
             margin: 0;
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
         }
     }
     
@@ -644,6 +650,7 @@ header {
             margin-right: 56px;
             border-radius: 8px;
             border: 1px solid #ddd;
+            animation: xslider 20s 2s linear infinite;
             
             &_img{
                 width: 100%;
@@ -659,7 +666,21 @@ header {
                     margin-top: 40px;
                 }
             }
+            
+            @keyframes xslider {
+            	0% {
+            	transform: translateX(0);
+            	}
+            	100% {
+            	transform: translateX(-100%);
+            	}
+            }
         }
+    }
+    
+    .scrollin{
+          opacity: 1;
+          transform: translate(0, 0);
     }
 }
 
@@ -671,23 +692,35 @@ header {
         max-width: 1025px;
         margin: 0 auto;
         
+        
         #contact_ttl {
             font-size: 32px;
             margin: 0 0 5px;
             color: #fff;
-            
+            opacity: $fadein-opacity;
+            transform: $fadein-transform;
+            transition: $fadein-transition;
+                
             &_sub {
                 color: #fff;
                 font-size: 16px;
                 margin: 0;
+                opacity: $fadein-opacity;
+                transform: $fadein-transform;
+                transition: $fadein-transition;
             }
             
             &_txt {
                 color: #fff;
                 font-size: 16px;
                 margin: 44px 0;
+                opacity: $fadein-opacity;
+                transform: $fadein-transform;
+                transition: $fadein-transition;
             }
         }
+        
+        
     }
     
     &_form {
@@ -761,6 +794,11 @@ header {
                 }
             }
         }
+    }
+    
+    .scrollin{
+          opacity: 1;
+          transform: translate(0, 0);
     }
 }
 

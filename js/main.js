@@ -20,10 +20,12 @@ $(function () {
     $(window).scroll(function () {
         const wHeight = $(window).height();
         const scrollAmount = $(window).scrollTop();
-        $('#feature_inner_ttl, #feature_inner_ttl_sub, .feature_container_box_ttl, .feature_container_box_inner_a_img, .feature_container_box_inner_b_img, .feature_container_box_inner_a_content, .feature_container_box_inner_b_content, #price_inner_ttl, #price_inner_ttl_sub, #price_inner_table, #price_disclaimer, #faq_inner_ttl, #faq_inner_ttl_sub, #faq_list').each(function () {
+        $('#feature_inner_ttl, #feature_inner_ttl_sub, .feature_container_box_ttl, .feature_container_box_inner_a_img, .feature_container_box_inner_b_img, .feature_container_box_inner_a_content, .feature_container_box_inner_b_content, #price_inner_ttl, #price_inner_ttl_sub, #price_inner_table, #price_disclaimer, #faq_inner_ttl, #faq_inner_ttl_sub, #faq_list, #works_ttl, #works_ttl_sub, #contact_ttl, #contact_ttl_sub, #contact_ttl_txt').each(function () {
             const targetPosition = $(this).offset().top;
             if(scrollAmount > targetPosition - wHeight + 60) {
-                $(this).addClass("scrollin");
+                $(this).stop().addClass("scrollin");
+            } else {
+            	$(this).stop().removeClass("scrollin");
             }
         });
     });
@@ -63,19 +65,3 @@ $('.blog_content_box_img').animate({zIndex:1},{
 	}
 })
 
-// $(function () {
-//     $(window).scroll(function () {
-//         const wHeight = $(window).height();
-//         const scrollAmount = $(window).scrollTop();
-//         $('.blog_content_box_img').each(function () {
-//             const targetPosition = $(this).offset().top;
-//             if(scrollAmount > targetPosition - wHeight + 60) {
-//                 $(this).addClass("scrollin_rotate")
-//                 // $('.blog_content_box_img').css(1500),
-//                 // $('.blog_content_box_img').css({
-//                 //   "transform": "rotateY(360deg)"
-//                 // });
-//             }
-//         });
-//     });
-// });

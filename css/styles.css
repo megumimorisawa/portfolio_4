@@ -528,11 +528,17 @@ header #header_menu ul li:nth-child(2n) {
 #works_ttl {
   font-size: 32px;
   margin: 70px 0 5px;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 #works_ttl_sub {
   color: #3BA6C9;
   font-size: 16px;
   margin: 0;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 #works_container {
   display: flex;
@@ -546,6 +552,7 @@ header #header_menu ul li:nth-child(2n) {
   margin-right: 56px;
   border-radius: 8px;
   border: 1px solid #ddd;
+  animation: xslider 20s 2s linear infinite;
 }
 #works_container .works_container_box_img {
   width: 100%;
@@ -558,6 +565,18 @@ header #header_menu ul li:nth-child(2n) {
 }
 #works_container .works_container_box_content_info {
   margin-top: 40px;
+}
+@keyframes xslider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#works .scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 #contact {
@@ -572,16 +591,25 @@ header #header_menu ul li:nth-child(2n) {
   font-size: 32px;
   margin: 0 0 5px;
   color: #fff;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 #contact_inner #contact_ttl_sub {
   color: #fff;
   font-size: 16px;
   margin: 0;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 #contact_inner #contact_ttl_txt {
   color: #fff;
   font-size: 16px;
   margin: 44px 0;
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 500ms;
 }
 #contact_form {
   background: #fff;
@@ -644,6 +672,10 @@ header #header_menu ul li:nth-child(2n) {
   height: 20px;
   vertical-align: middle;
   margin-right: 10px;
+}
+#contact .scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 footer {
