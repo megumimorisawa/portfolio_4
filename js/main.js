@@ -13,19 +13,19 @@ $(window).on('load', function () {
 		//次のために、元に戻しておく
 		$('#fv').css('paddingRight', 0);
 	}
-})
-})
+});
+});
 
 $(function () {
     $(window).scroll(function () {
         const wHeight = $(window).height();
         const scrollAmount = $(window).scrollTop();
-        $('#feature_inner_ttl, #feature_inner_ttl_sub, .feature_container_box_ttl, .feature_container_box_inner_a_img, .feature_container_box_inner_b_img, .feature_container_box_inner_a_content, .feature_container_box_inner_b_content, #price_inner_ttl, #price_inner_ttl_sub, #price_inner_table, #price_disclaimer, #faq_inner_ttl, #faq_inner_ttl_sub, #faq_list, #works_ttl, #works_ttl_sub, #contact_ttl, #contact_ttl_sub, #contact_ttl_txt').each(function () {
+        $('#feature_inner_ttl, #feature_inner_ttl_sub, .feature_container_box_ttl, .feature_container_box_inner_a_img, .feature_container_box_inner_b_img, .feature_container_box_inner_a_content, .feature_container_box_inner_b_content, #price_inner_ttl, #price_inner_ttl_sub, #price_inner_table, #price_disclaimer, #faq_inner_ttl, #faq_inner_ttl_sub, #faq_list, #works_ttl, #works_ttl_sub, #blog_ttl, #blog_ttl_sub, #contact_form').each(function () {
             const targetPosition = $(this).offset().top;
             if(scrollAmount > targetPosition - wHeight + 60) {
-                $(this).stop().addClass("scrollin");
+                $(this).addClass("scrollin");
             } else {
-            	$(this).stop().removeClass("scrollin");
+            	$(this).removeClass("scrollin");
             }
         });
     });
@@ -49,19 +49,4 @@ $(function () {
     })
 });
 
-$('.blog_content_box_img').animate({zIndex:1},{
-	//1秒かけてアニメーション
-	duration:1000,
-	//stepは、アニメーションが進むたびに呼ばれる
-	step:function(now){
-		//nowに現在のz-indexの値（0から1に変化しているところ）が渡してもらえる
-		//0から1に向かって変化していくnowを利用して3回転（1080度）させてみる
-		$(this).css({transform:'rotateY(' + (now * 360) + 'deg)'});
-	},
-	//終わったら
-	complete:function(){
-		//次のために、元に戻しておく
-		$('.blog_content_box_img').css('zIndex', 0);
-	}
-})
-
+ 

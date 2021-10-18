@@ -4,10 +4,16 @@ $button-color: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%);
 $box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
 $pc: 1024px;
 $sp: 599px;
-$fadein-opacity: 0;
-$fadein-transform: translate(0, 100px);
-$fadein-transition: all 500ms;
+@mixin fadeinSet {
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 500ms;
+}
 
+@mixin scrollIn {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 body {
     margin: 0 auto;
@@ -111,7 +117,6 @@ header {
         @media(min-width: 1025px) {
         display: none;
         }
-        
     }
     
     #menu_btn_check {
@@ -213,9 +218,6 @@ header {
     }
 }
             
-    
-
-
 .contact_button {
         background: $button-color;
         box-shadow: $box-shadow;
@@ -237,7 +239,6 @@ header {
     background-repeat: no-repeat;
     background-position: right top;
     padding: 250px 0 200px;
-    
     
     #fv_inner {
         display: flex;
@@ -290,22 +291,15 @@ header {
         &_ttl {
             font-size: 32px;
             margin-bottom: 5px;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
+            @include fadeinSet;
             
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
-                opacity: $fadein-opacity;
-                transform: $fadein-transform;
-                transition: $fadein-transition;
+                @include fadeinSet;
             }
         }
-        
-        
-            
         
         .feature_container {
             
@@ -314,9 +308,7 @@ header {
                 
                 &_ttl {
                     margin: 67px 0 54px;
-                    opacity: $fadein-opacity;
-                    transform: $fadein-transform;
-                    transition: $fadein-transition;
+                    @include fadeinSet;
                 }
                 
                 &_inner_a,
@@ -324,12 +316,9 @@ header {
                     display: flex;
                     justify-content: space-between;
                     
-                    
                     &_img {
                         width: 50%;
-                        opacity: $fadein-opacity;
-                        transform: $fadein-transform;
-                        transition: $fadein-transition;
+                        @include fadeinSet;
                         
                         img {
                             width: 100%;
@@ -338,7 +327,6 @@ header {
                                 width: 50%;
                             }
                         }
-                        
                     }
                     
                     @media(max-width: ($pc)) {
@@ -349,10 +337,7 @@ header {
                         text-align: left;
                         font-weight: 700;
                         line-height: 2;
-                        opacity: $fadein-opacity;
-                        transform: $fadein-transform;
-                        transition: $fadein-transition;
-                        
+                        @include fadeinSet;
                         
                         @media(max-width: ($pc)) {
                             text-align: center;
@@ -365,7 +350,6 @@ header {
                         
                         h3 {
                             font-size: 24px;
-                            
                         }
                         
                         p {
@@ -377,14 +361,12 @@ header {
                 &_inner_b {
                     flex-direction: row-reverse;
                 }
-                
             }
         }
     }
     
     .scrollin{
-          opacity: 1;
-          transform: translate(0, 0);
+        @include scrollIn;
     }
 }
 
@@ -399,17 +381,13 @@ header {
         &_ttl {
             font-size: 32px;
             margin-bottom: 5px;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
+            @include fadeinSet;
             
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
-                opacity: $fadein-opacity;
-                transform: $fadein-transform;
-                transition: $fadein-transition;
+                @include fadeinSet;
             }
         }
         
@@ -422,9 +400,7 @@ header {
             background: #fff;
             line-height: 1.75;
             margin: 73px 0 36px;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
+            @include fadeinSet;
             
             @media(max-width: ($pc)) {
                 width: 90%;
@@ -453,17 +429,12 @@ header {
     }
     
     &_disclaimer {
-        opacity: $fadein-opacity;
-        transform: $fadein-transform;
-        transition: $fadein-transition;
+        @include fadeinSet;
         }
     
     .scrollin{
-          opacity: 1;
-          transform: translate(0, 0);
+        @include scrollIn;
     }
-    
-    
 }
 
 #faq {
@@ -474,17 +445,13 @@ header {
         &_ttl {
             font-size: 32px;
             margin: 100px 0 5px;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
+            @include fadeinSet;
             
             &_sub {
                 color: #3BA6C9;
                 font-size: 16px;
                 margin: 0;
-                opacity: $fadein-opacity;
-                transform: $fadein-transform;
-                transition: $fadein-transition;
+                @include fadeinSet;
             }
         }
     }
@@ -493,9 +460,7 @@ header {
         font-size: 13px;
         font-weight: 700;
         padding: 70px 20px 100px;
-        opacity: $fadein-opacity;
-        transform: $fadein-transform;
-        transition: $fadein-transition;
+        @include fadeinSet;
         
         @media(max-width: ($sp)) {
             padding: 70px 10px 100px;
@@ -519,7 +484,6 @@ header {
             margin: 0;
             padding: 25px 30px;
             text-align: left;
-            
         }
         
         &_answer2,
@@ -532,15 +496,11 @@ header {
             margin: 0;
             border-left: 1px solid rgba(0,0,0,0.16);
             border-top: 1px solid rgba(0,0,0,0.16);
-            
         }
-        
-        
     }
     
     .scrollin{
-        opacity: 1;
-        transform: translate(0, 0);
+        @include scrollIn;
     }
 }
 
@@ -552,18 +512,16 @@ header {
         padding: 40px 10px 100px;
     }
     
-    &_inner {
-         
-    }
-     
     &_ttl {
         font-size: 32px;
         margin: 50px 0 5px;
+        @include fadeinSet;
         
         &_sub {
             color: #3BA6C9;
             font-size: 16px;
             margin: 0;
+            @include fadeinSet;
         }
     }
     
@@ -591,7 +549,6 @@ header {
             
             &_img {
                 width: 100%;
-                // opacity: $fadein-opacity;
             }
             
             &_txt {
@@ -614,6 +571,10 @@ header {
             }
         }
     }
+    
+    .scrollin{
+        @include scrollIn;
+    }
 }
 
 #works {
@@ -624,17 +585,13 @@ header {
     &_ttl {
         font-size: 32px;
         margin: 70px 0 5px;
-        opacity: $fadein-opacity;
-        transform: $fadein-transform;
-        transition: $fadein-transition;
+        @include fadeinSet;
         
         &_sub {
             color: #3BA6C9;
             font-size: 16px;
             margin: 0;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
+            @include fadeinSet;
         }
     }
     
@@ -679,8 +636,7 @@ header {
     }
     
     .scrollin{
-          opacity: 1;
-          transform: translate(0, 0);
+        @include scrollIn;
     }
 }
 
@@ -692,35 +648,23 @@ header {
         max-width: 1025px;
         margin: 0 auto;
         
-        
         #contact_ttl {
             font-size: 32px;
             margin: 0 0 5px;
             color: #fff;
-            opacity: $fadein-opacity;
-            transform: $fadein-transform;
-            transition: $fadein-transition;
                 
             &_sub {
                 color: #fff;
                 font-size: 16px;
                 margin: 0;
-                opacity: $fadein-opacity;
-                transform: $fadein-transform;
-                transition: $fadein-transition;
             }
             
             &_txt {
                 color: #fff;
                 font-size: 16px;
                 margin: 44px 0;
-                opacity: $fadein-opacity;
-                transform: $fadein-transform;
-                transition: $fadein-transition;
             }
         }
-        
-        
     }
     
     &_form {
@@ -728,10 +672,11 @@ header {
         padding: 35px 15px;
         font-weight: 700;
         margin: 0 20px;
+        @include fadeinSet;
         
         @media(max-width: ($sp)) {
-                margin: 0 10px;
-            }
+            margin: 0 10px;
+        }
         
         ul {
             padding: 0;
@@ -797,8 +742,7 @@ header {
     }
     
     .scrollin{
-          opacity: 1;
-          transform: translate(0, 0);
+        @include scrollIn;
     }
 }
 
